@@ -11,9 +11,10 @@ A collection of graphics and images of animal tracks.  No attribution is require
 
 ## Status
 The table below will be updated as I finish each track.
-:heavy_check_mark: == completed
-:x: == will not do
-no symbol == in progress
+
+- :heavy_check_mark: == completed
+- :x: == will not do
+- no symbol == in progress
 
 |Animal          |SVG|Silhouette|Displacement|Normals|
 |----------------|---|----------|------------|-------|
