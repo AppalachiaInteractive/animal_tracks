@@ -1,14 +1,16 @@
 
 # Animal Tracks
-A collection of graphics and images of animal tracks.  No attribution is required, do what you like.  I would love to see anything that you produce, though!
+A collection of graphics and images of animal tracks.  No attribution is required, do what you like.  I would love to see anything that you produce, though!  
+
+*If you work for a conservation, fish, wildlife, parks, or similar service and need help using these, I'd be happy to donate my help.*
 
 ## Included
+- PNG files of initial track silhouette
 - SVG files of the track outline
-- PNG files of the track silhouette
+- PNG file of a high-quality silhouette
 - PNG files of *my estimation* of the track's surface details, such as displacement and surface normals.  
 
-## Background
-These are not scans - everything is derived from reference images, so they may not line up 100% with real world tracks.  Feel free to make pull requests if you improve or add something, or raise issues if you would like an animal added or modified.  If you can provide the track silhouette, even better.  No guarantees but I'll do what I can.
+These are not scans - everything is derived from reference images, so they may not line up 100% with real world tracks.  Feel free to make pull requests if you can improve or add something. Raise issues if you would like an animal added or modified.  If you can provide the track silhouette and dimensions, even better.  No guarantees but I'll do what I can.  If you want to have a crack on your own, follow the process below.
 
 ### Process
 Once a silhouette for a track is obtained:
@@ -18,6 +20,7 @@ Once a silhouette for a track is obtained:
 - SVG is rendered to a new, high-quality bitmap.
 - HQ bitmap is tweaked into an esimated height map.
 - A normal map is generated using code adapted from [Mehdi-Antoine's Normal Map Generator](https://github.com/Mehdi-Antoine/NormalMapGenerator).
+
 
 ## Status
 The table below will be updated as I finish each track.
@@ -78,4 +81,4 @@ The table below will be updated as I finish each track.
 ### Sources
 The original reference image is included with the repository, as well as a few cleaned up versions.  The original appears to be a scan from a book, and has been shared hundreds of times across the internet.  I can not find the original source, but if you know it I would appreciate being able to cite it here.
 
-<img src="./references/tracks_transparency.png" height=400>
+<img src="./references/tracks_transparency.png">
