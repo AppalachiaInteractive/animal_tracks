@@ -1,34 +1,32 @@
 
 
-  <img src="./tracks/bear-brown/bear-brown_front_outline.svg" height=100>
-  <img src="./tracks/cougar/cougar_front_outline.svg" height=100> 
-  <img src="./tracks/skunk/skunk_outline.svg" height=100>
-  <img src="./tracks/turkey/turkey_outline.svg" height=100>
-  <img src="./tracks/caribou/caribou_outline.svg" height=100>
+  <img src="./tracks/bear-brown/bear-brown_front_outline.svg" height=100>  <img src="./tracks/cougar/cougar_front_outline.svg" height=100>   <img src="./tracks/skunk/skunk_outline.svg" height=100>  <img src="./tracks/turkey/turkey_outline.svg" height=100>  <img src="./tracks/caribou/caribou_outline.svg" height=100>
 
 # Animal Tracks 
+<img src="./tracks/antelope/antelope_silhouette.png" height=20>             <img src="./tracks/armadillo/armadillo_silhouette.png" height=20>           <img src="./tracks/badger/badger_silhouette.png" height=20>                 <img src="./tracks/bear-black/bear-black_front_silhouette.png" height=20>   <img src="./tracks/bear-black/bear-black_rear_silhouette.png" height=20>    <img src="./tracks/bear-brown/bear-brown_front_silhouette.png" height=20>   <img src="./tracks/bear-brown/bear-brown_rear_silhouette.png" height=20>    <img src="./tracks/beaver/beaver_silhouette.png" height=20>                 <img src="./tracks/bison/bison_silhouette.png" height=20>                   <img src="./tracks/bobcat/bobcat_silhouette.png" height=20>                 <img src="./tracks/caribou/caribou_silhouette.png" height=20>               <img src="./tracks/cat/cat_silhouette.png" height=20>                       <img src="./tracks/cougar/cougar_front_silhouette.png" height=20>           <img src="./tracks/coyote/coyote_silhouette.png" height=20>              <img src="./tracks/deer-whitetail/deer-whitetail_silhouette.png" height=20> <img src="./tracks/dog/dog_silhouette.png" height=20>                       <img src="./tracks/elk/elk_silhouette.png" height=20>                       <img src="./tracks/ferret/ferret_silhouette.png" height=20>                 <img src="./tracks/fisher/fisher_silhouette.png" height=20>                 <img src="./tracks/fox-red/fox-red_silhouette.png" height=20>               <img src="./tracks/jackrabbit/jackrabbit_silhouette.png" height=20>         <img src="./tracks/lynx/lynx_silhouette.png" height=20>                     <img src="./tracks/marmot/marmot_silhouette.png" height=20>                 <img src="./tracks/marten/marten_silhouette.png" height=20>                 <img src="./tracks/mink/mink_silhouette.png" height=20>                     <img src="./tracks/moose/moose_silhouette.png" height=20>                   <img src="./tracks/goat-mountain/goat-mountain_silhouette.png" height=20>   <img src="./tracks/sheep-mountain/sheep-mountain_silhouette.png" height=20> <img src="./tracks/muskox/muskox_silhouette.png" height=20>                 <img src="./tracks/muskrat/muskrat_silhouette.png" height=20>               <img src="./tracks/ocelot/ocelot_silhouette.png" height=20>             
 
 A collection of free vector graphics and images of animal tracks.  No attribution is required, do what you like.  I would love to see anything that you produce, though!  
 
-*If you work for a conservation, fish, wildlife, parks, or similar service and need help using these, I'd be happy to donate my help.*
+*If you work for a conservation, fish, field, wildlife, parks, or similar service and need help using these, I'd be happy to donate my help.  These **can** be used freely, even in commercial works.*
 
 ## Included
 - PNG files of initial track silhouette
 - SVG files of the track outline
 - PNG file of a high-quality rendering of the new silhouette
-- PNG files of *my estimation* of the track's surface details, such as displacement and surface normals.
+- PNG files of *my estimation* of the track's surface details, such as displacement and surface normals.  I'm considering adding other [physically based rendering](https://en.wikipedia.org/wiki/Physically_based_rendering) maps as well but these might be too dependent on the use case.
 
-These are not scans - everything is derived from reference images, so they may not line up 100% with real world tracks.  Feel free to make pull requests if you can improve or add something. Raise issues if you would like an animal added or modified.  If you can provide the track silhouette and dimensions, even better.  No guarantees but I'll do what I can.  If you want to have a crack on your own, follow the process below.
+
+These are not scans - everything is derived from reference images which are included at the bottom of this document.  Feel free to make pull requests if you can improve or add something. Raise issues if you would like an animal added or modified.  If you can provide the track silhouette and dimensions, even better.  No guarantees but I'll do what I can.  If you want to have a crack on your own, follow the process below.
 
 ### Process
 Once a silhouette for a track is obtained, the creation of the rest of the assets is relatively simple to invoke.
-- A subdirectory named for the animal is created in the `tracks` directory.  
-- The silhouette is added to the subdirectory as `{animal-name}_silhouette.png`.
-- `tracks/../scripts/trace.py` can be executed, which will kick off the following:
+- A subdirectory named for the animal is created in the `tracks` directory.
+- The silhouette is added to the subdirectory as `{id}_silhouette.png`.  `{id}` can be the animal name, or maybe `{animal-name}-front`, `{animal-name}-left`, etc.  This will be preserved in the output file names.
+- `scripts/trace.py` can be executed, which will kick off the following:
   - [POTrace](http://potrace.sourceforge.net/) is used to convert the silhouette to SVG.
   - SVG is rendered to a new, high-quality PNG using [Wand](https://docs.wand-py.org/en/0.6.6/) (Python bindings for [ImageMagick](https://imagemagick.org/index.php)).
-  - HQ silhouette is tweaked into an esimated height map using [Pillow](https://github.com/python-pillow/Pillow).
-  - A normal map is generated using code adapted from [Mehdi-Antoine's Normal Map Generator](https://github.com/Mehdi-Antoine/NormalMapGenerator).
+  - HQ silhouette is blurred to create a rough estimate of a [height map](https://en.wikipedia.org/wiki/Heightmap) using [Wand](https://docs.wand-py.org/en/0.6.6/).
+  - A [normal map](https://en.wikipedia.org/wiki/Normal_mapping) is generated using code adapted from [Mehdi-Antoine's Normal Map Generator](https://github.com/Mehdi-Antoine/NormalMapGenerator), which in turn uses [SciPy](https://www.scipy.org/).  Normal maps describe the surface normal direction in a normalized XYZ vector.  X is right, Z is forward, and included are both Y-down (DirectX) and Y-up (OpenGL) formats.
 
 
 ## Status
@@ -87,7 +85,17 @@ The table below will be updated as I finish each track.
 |Wolverine            | <img src="./tracks/wolverine/wolverine_silhouette.png" height=30>           | <img src="./tracks/wolverine/wolverine_outline.svg" height=30>           | <img src="./tracks/wolverine/wolverine_hq.png" height=30>           | <img src="./tracks/wolverine/wolverine_height.png" height=30>            |<img src="./tracks/wolverine/wolverine_normal-directx.png" height=30>            |<img src="./tracks/wolverine/wolverine_normal-opengl.png" height=30>           |
 |Woodchuck            | <img src="./tracks/woodchuck/woodchuck_silhouette.png" height=30>           | <img src="./tracks/woodchuck/woodchuck_outline.svg" height=30>           | <img src="./tracks/woodchuck/woodchuck_hq.png" height=30>           | <img src="./tracks/woodchuck/woodchuck_height.png" height=30>            |<img src="./tracks/woodchuck/woodchuck_normal-directx.png" height=30>            |<img src="./tracks/woodchuck/woodchuck_normal-opengl.png" height=30>           |
 
-### Sources
-The original reference image is included with the repository, as well as a few cleaned up versions.  The original appears to be a scan from a book, and has been shared hundreds of times across the internet.  I can not find the original source, but if you know it I would appreciate being able to cite it here.
+### Sources & Thanks
+The sources are all either free digital works found on the websites listed below, or now-digital photoscans of old references/pocket guides.  I've attributed what I can below.  Please let me know if you can identify the source of anything not listed.
 
-<img src="./references/tracks_transparency.png">
+|Source|Images|
+|------|------|
+|      |<img src="./references/animal-tracks-reference_transparency.png" height=200>|
+|[Hiking Michigan](https://hikingmichigan.wordpress.com/)|<img src="./references/se-michigan-forest_original.bmp" height=200><img src="./references/se-michigan-streamside_original.bmp" height=200>|
+|[Florida Fish And Wildlife Conservation Commission](https://hikingmichigan.wordpress.com/)|<img src="./references/pocket-guide-to-florida_original.bmp" height=200>|
+|[Sequoia Parks Conservancy](https://store.sequoiaparksconservancy.org)|<img src="./references/animal-tracks-sequoia_original.bmp" height=200><img src="./references/animal-tracks-sierra_original.bmp" height=200>|
+|[MassWildlife](https://www.mass.gov/orgs/division-of-fisheries-and-wildlife)|<img src="./references/pocket-guide-to-ma_original.bmp" height=200>|
+|[Virginia DWR](https://dwr.virginia.gov/)|<img src="./references/pocket-guide-to-va_original.bmp" height=200>|
+
+
+
