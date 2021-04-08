@@ -2,18 +2,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="85.000000pt" height="83.000000pt" viewBox="0 0 85.000000 83.000000"
+ width="767.952000pt" height="767.952000pt" viewBox="0 0 767.952000 767.952000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
-<g transform="translate(0.000000,83.000000) scale(0.100000,-0.100000)"
+<g transform="translate(23.976000,743.976000) scale(0.847059,-0.847059)"
 fill="#000000" stroke="none">
-<path fill="#000000" stroke="none" d="M290 811 c-105 -32 -187 -129 -252
+<path fill="#000000" stroke="none" d="M290 821 c-105 -32 -187 -129 -252
 -298 -31 -80 -32 -246 -1 -313 33 -72 96 -144 147 -168 72 -34 185 -27 211 12
 13 19 12 34 -7 121 -27 130 -29 359 -3 524 15 96 16 114 4 122 -17 10 -64 10
 -99 0z"/>
-<path fill="#000000" stroke="none" d="M450 808 c0 -7 7 -65 16 -128 18 -129
+<path fill="#000000" stroke="none" d="M450 818 c0 -7 7 -65 16 -128 18 -129
 20 -386 4 -470 -5 -30 -13 -78 -16 -106 -6 -47 -4 -53 17 -67 13 -8 43 -18 67
 -21 155 -23 302 138 302 332 0 179 -111 391 -235 448 -56 26 -155 34 -155 12z"/>
 </g>

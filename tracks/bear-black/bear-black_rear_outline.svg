@@ -2,34 +2,34 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="70.000000pt" height="129.000000pt" viewBox="0 0 70.000000 129.000000"
+ width="767.952000pt" height="767.952000pt" viewBox="0 0 767.952000 767.952000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
-<g transform="translate(0.000000,129.000000) scale(0.100000,-0.100000)"
+<g transform="translate(23.976000,743.976000) scale(0.558140,-0.558140)"
 fill="#000000" stroke="none">
-<path fill="#000000" stroke="none" d="M357 1253 c-7 -41 -3 -53 20 -53 11 0
+<path fill="#000000" stroke="none" d="M647 1253 c-7 -41 -3 -53 20 -53 11 0
 14 6 9 23 -3 12 -6 32 -6 45 0 35 -17 25 -23 -15z"/>
-<path fill="#000000" stroke="none" d="M195 1210 c-8 -47 -5 -53 19 -44 13 5
+<path fill="#000000" stroke="none" d="M485 1210 c-8 -47 -5 -53 19 -44 13 5
 16 14 10 38 -10 49 -21 52 -29 6z"/>
-<path fill="#000000" stroke="none" d="M528 1194 c-3 -5 -8 -21 -12 -36 -5
+<path fill="#000000" stroke="none" d="M818 1194 c-3 -5 -8 -21 -12 -36 -5
 -24 -3 -28 14 -28 14 0 20 7 20 23 0 26 -15 53 -22 41z"/>
-<path fill="#000000" stroke="none" d="M30 1135 c0 -33 4 -45 15 -45 16 0 18
+<path fill="#000000" stroke="none" d="M320 1135 c0 -33 4 -45 15 -45 16 0 18
 12 9 59 -10 46 -24 38 -24 -14z"/>
-<path fill="#000000" stroke="none" d="M346 1164 c-33 -32 -32 -100 1 -136 36
+<path fill="#000000" stroke="none" d="M636 1164 c-33 -32 -32 -100 1 -136 36
 -40 83 -2 83 65 0 72 -45 110 -84 71z"/>
-<path fill="#000000" stroke="none" d="M176 1131 c-41 -45 -25 -151 25 -164
+<path fill="#000000" stroke="none" d="M466 1131 c-41 -45 -25 -151 25 -164
 58 -15 94 99 48 157 -24 31 -49 33 -73 7z"/>
-<path fill="#000000" stroke="none" d="M475 1080 c-23 -44 -19 -87 10 -116 20
+<path fill="#000000" stroke="none" d="M765 1080 c-23 -44 -19 -87 10 -116 20
 -20 29 -23 45 -14 27 14 40 42 40 85 0 52 -15 75 -50 75 -23 0 -33 -7 -45 -30z"/>
-<path fill="#000000" stroke="none" d="M649 1063 c-11 -29 -6 -53 11 -53 5 0
+<path fill="#000000" stroke="none" d="M939 1063 c-11 -29 -6 -53 11 -53 5 0
 10 18 10 40 0 47 -6 51 -21 13z"/>
-<path fill="#000000" stroke="none" d="M34 1062 c-20 -13 -34 -50 -34 -92 0
+<path fill="#000000" stroke="none" d="M324 1062 c-20 -13 -34 -50 -34 -92 0
 -48 12 -75 41 -90 66 -36 117 79 69 158 -19 31 -50 42 -76 24z"/>
-<path fill="#000000" stroke="none" d="M628 990 c-38 -23 -46 -122 -13 -150
+<path fill="#000000" stroke="none" d="M918 990 c-38 -23 -46 -122 -13 -150
 53 -44 115 90 65 140 -22 22 -28 23 -52 10z"/>
-<path fill="#000000" stroke="none" d="M283 949 c-85 -16 -214 -105 -239 -165
+<path fill="#000000" stroke="none" d="M573 949 c-85 -16 -214 -105 -239 -165
 -22 -51 -18 -124 9 -175 67 -126 80 -176 88 -341 8 -169 20 -213 66 -243 32
 -21 81 -22 120 -1 114 58 303 459 303 641 0 90 -16 124 -90 196 -85 83 -157
 108 -257 88z"/>
